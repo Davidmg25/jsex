@@ -1,13 +1,15 @@
 
 
+ 
 
 
-let numero = parseInt(prompt('Introduce el número entero hasta el cual desees ver la lista de impares y pares'))
 
-for(let i=1; i<=numero; i++){
-    if(i%2==0){
-        confirm(`El numero ${i}  es par`);
-    }else{
-        confirm(`El numero ${i}  es impar`);
-    }
+const colores = ["azul", "amarillo", "rojo", "verde", "rosa"]
+
+const color = prompt('Introduce un color').toLowerCase()
+
+if(colores.indexOf(color) !== -1){
+    confirm('Tu color se encuentra en el array');
+}else{
+    confirm('Tu color no está definido');
 }
